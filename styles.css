@@ -1,0 +1,259 @@
+/*Fonts*/
+@font-face {
+    font-family: 'RubikOne';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rubik One Regular'), url('RubikOne-Regular.woff') format('woff');
+    }
+
+/*Base*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+    background-color: #fffad8;
+
+}
+
+/*Style*/
+.Top {
+    background-color: #873030;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'RubikOne';
+    letter-spacing: 0.5px;
+    color: #fffad8;
+    text-align: center;
+    overflow: hidden;
+    .Top1 {
+    position: absolute;
+    width: 100%;
+    margin: -10px;
+    text-align: center;
+    animation: scroll-right 15s linear infinite; 
+
+   }
+   .Top2 {
+    position: absolute;
+    width: 100%;
+    margin: -10px;
+    text-align: center;
+    transform: translateX(-100%);
+    animation: scroll-right 15s linear infinite;
+    animation-delay: 7.5s;
+
+   }
+}
+.Middle {
+    background-color: #af3e3e;
+    color: #af3e3e;
+    text-align: center;
+    padding: 1px;
+    line-height: 15px;
+}
+.Bottom {
+    background-color: #ebebeb;
+    color: #ebebeb;
+    text-align: center;
+    padding: 1px;
+    line-height: 10px;
+    font-size: 1px;
+}
+.End {
+    background-color: #af3e3e;
+    color: #af3e3e;
+    text-align: center;
+    padding: 1px;
+    line-height: 3px;
+    font-size: 1px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #fcfbfb;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+  li {
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 150px;
+    height: 55px;
+    a {
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: RubikOne;
+      }
+  }
+  .Logos {
+    width: 60%;
+    display: flex;
+    padding-left: 1vh;
+    P {
+      font-family: RubikOne;
+      font-size: 40px;
+      color: #af3e3e;
+      margin: 5px;
+  
+    }
+    img {
+      height: 60px;
+      width: 65px;
+    }
+  }
+}
+
+.Home {
+  background-image: linear-gradient(#1f0706bd, #080e2998), url(Images/Cooking.gif);;
+  background-size: cover;
+  background-position: bottom, 0px -12vh;
+  height: 70vh;
+  margin-bottom: -10px;
+  padding: 25vh 50px 50px 60px;
+  overflow: visible;
+  h1 {
+    color: #af3e3e00;
+    font-size: 70px;
+    font-family: RubikOne;
+    background: linear-gradient(to right, #af3e3e, #d69061);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  p {
+    color: #f0b085;
+    font-size: 45px;
+    font-family: RubikOne;
+  }
+  button {
+    color: #d66f61;
+    background-color: #fffad8;
+    font-size: 28px;
+    padding: 25px 55px 25px 55px;
+    border: none;
+    border-radius: 40px;
+    font-family: Rubikone;
+    margin-top: 5vh;
+  }
+  button:hover {
+    background-color: #d3cc9e;
+    transition: 0.8s;
+  }
+
+}
+
+.Scroll1 {
+  padding:50px;
+  p {
+    font-size: 50px;
+    font-family: Rubikone;
+    color: #af3e3e;
+    font-size: 70px;
+    font-family: RubikOne;
+  }
+  span {
+    color: #af3e3e00;
+    font-family: RubikOne;
+    background: linear-gradient(to right, #ca5a5a, #d69061);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .Sub1 {
+    font-size: 40px;
+  }
+}
+
+.Scroll2 {
+  background-color: #af3e3e;
+  width: 100%;
+  height: 150vh;
+  color: #fffad8;
+  display: flex;
+  gap: 20vh;
+  padding: 15vh 10vh 10vh 10vh;
+  .Half1 {
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    a {
+      font-size: 40px;
+    }
+    .Cite {
+      font-size: 18px;
+      padding-left: 5px;
+    }
+  }
+  .Half1o5 {
+    width: 50%;
+    div {
+      p {
+        font-size: 30px;
+        font-family: RubikOne;
+      }
+      span {
+        font-size: 15px
+      }
+    }
+    .Plant {
+        display: flex;
+        background-color: #fffad8;
+        color: #af3e3e;
+        padding: 3vh 2vh 3vh 2vh;
+        border-radius: 20px;
+        margin-bottom: 2vh;
+        img {
+          border-radius: 20px;
+          width: 1000px;
+          height: auto;
+          margin-right: 3vh;
+        }
+    }
+    .Sugar {
+      display: flex;
+      background-color: #fffad8;
+      color: #af3e3e;
+      padding: 3vh 2vh 3vh 2vh;
+      border-radius: 20px;
+      margin-bottom: 2vh;
+      img {
+        border-radius: 20px;
+        width: 650px;
+        height: auto;
+        margin-right: 3vh;
+      }
+  }
+  .Animal {
+    display: flex;
+    background-color: #fffad8;
+    color: #af3e3e;
+    padding: 3vh 2vh 3vh 2vh;
+    border-radius: 20px;
+    margin-bottom: 2vh;
+    img {
+      border-radius: 20px;
+      width: 500px;
+      height: auto;
+      margin-right: 3vh;
+    }
+}
+  }
+}
+
+/*Animations*/
+
+@keyframes scroll-right {
+  0%   {
+  transform: translateX(-100%); 		
+  }
+  100% {
+  transform: translateX(100%); 
+  }
+ }
