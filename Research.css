@@ -120,6 +120,15 @@ ul {
   }
 }
 
+.Scroll1 {
+    display: flex;
+    padding: 10px;
+    .img {
+       width: 100px;
+    }
+}
+
+
 /*animation*/
 
 @keyframes scroll-right {
@@ -129,4 +138,5 @@ ul {
   100% {
     transform: translateX(-100%);
   }
+
 }
