@@ -6,15 +6,23 @@
     src: local('Rubik One Regular'), url('RubikOne-Regular.woff') format('woff');
     }
 
+@font-face {
+  font-family: 'Geometric';
+  font-style: normal;
+  font-weight: normal;
+  src: url(geometric.otf);
+  }
+
 /*Base*/
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body {
     background-color: #fffad8;
+    overflow-x: hidden;
 
 }
 
@@ -28,25 +36,26 @@ body {
     color: #fffad8;
     text-align: center;
     overflow: hidden;
-    .Top1 {
-    position: absolute;
-    width: 100%;
-    margin: -10px;
-    text-align: center;
-    animation: scroll-right 15s linear infinite; 
-
-   }
-   .Top2 {
-    position: absolute;
-    width: 100%;
-    margin: -10px;
-    text-align: center;
-    transform: translateX(-100%);
-    animation: scroll-right 15s linear infinite;
-    animation-delay: 7.5s;
-
-   }
 }
+
+.Top1 {
+  position: absolute;
+  width: 100%;
+  margin: -10px;
+  text-align: center;
+  animation: scroll-right 15s linear infinite; 
+  }
+
+.Top2 {
+  position: absolute;
+  width: 100%;
+  margin: -10px;
+  text-align: center;
+  animation: scroll-right 15s linear infinite; 
+  animation-delay: 7.5s;
+  transform: translateX(-100%);
+  }
+
 .Middle {
     background-color: #af3e3e;
     color: #af3e3e;
@@ -80,6 +89,7 @@ ul {
     display: flex;
     justify-content: right;
     width: 100%;
+    padding-right: 25px;
   li {
     border-radius: 10px;
     margin-left: 20px;
@@ -95,14 +105,13 @@ ul {
       }
   }
   .Logos {
-    width: 60%;
+    padding-right: 59vh;
     display: flex;
-    padding-left: 1vh;
     P {
       font-family: RubikOne;
       font-size: 40px;
       color: #af3e3e;
-      margin: 5px;
+      margin: 5px 5px 5px 20px;
   
     }
     img {
@@ -113,51 +122,56 @@ ul {
 }
 
 .Home {
-  background-image: linear-gradient(#1f0706bd, #080e2998), url(Images/Cooking.gif);;
+  background-image: linear-gradient(#1f0706bd, #080e2998), url(Images/Cooking.gif);
   background-size: cover;
   background-position: bottom, 0px -12vh;
-  height: 70vh;
+  height: 600px;
   margin-bottom: -10px;
-  padding: 25vh 50px 50px 60px;
+  padding: 200px 50px 50px 60px;
   overflow: visible;
-  h1 {
+  .Title {
     color: #af3e3e00;
     font-size: 70px;
     font-family: RubikOne;
-    background: linear-gradient(to right, #af3e3e, #d69061);
+    background: linear-gradient(to right, #e45454, #d69061);
     background-clip: text;
     -webkit-background-clip: text;
   }
   p {
-    color: #f0b085;
+    color: #af3e3e00;
     font-size: 45px;
     font-family: RubikOne;
+    background: linear-gradient(to right, #f1ae81, #f0b085);
+    background-clip: text;
+    -webkit-background-clip: text;
   }
   button {
     color: #d66f61;
-    background-color: #fffad8;
+    background-color: #f0ebcc;
     font-size: 28px;
     padding: 25px 55px 25px 55px;
     border: none;
     border-radius: 40px;
     font-family: Rubikone;
-    margin-top: 5vh;
+    margin-top: 40px;
+    transition: all 0.8s;
+    font-weight: lighter;
+    cursor: pointer;
   }
-  button:hover {
-    background-color: #d3cc9e;
-    transition: 0.8s;
-  }
-
+  
 }
 
 .Scroll1 {
-  padding:50px;
+  display: flex;
+  background-image: linear-gradient(#fffad81e, #fffad859), url(Images/Backdrop1.svg);;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+  overflow-y: hidden;
   p {
-    font-size: 50px;
-    font-family: Rubikone;
+    font-family: RubikOne;
     color: #af3e3e;
     font-size: 70px;
-    font-family: RubikOne;
   }
   span {
     color: #af3e3e00;
@@ -167,93 +181,52 @@ ul {
     -webkit-background-clip: text;
   }
   .Sub1 {
-    font-size: 40px;
+    font-size: 35px;
+    font-family: Geometric;
+    color: #ca5a5a;
   }
-}
-
-.Scroll2 {
-  background-color: #af3e3e;
-  width: 100%;
-  height: 150vh;
-  color: #fffad8;
-  display: flex;
-  gap: 20vh;
-  padding: 15vh 10vh 10vh 10vh;
-  .Half1 {
+  div {
     width: 50%;
-    font-family: 'Times New Roman', Times, serif;
+  }
+  button {
+    color: #ca5a5a;
+    background-color: #e6d3b8;
     font-size: 28px;
-    a {
-      font-size: 40px;
-    }
-    .Cite {
-      font-size: 18px;
-      padding-left: 5px;
-    }
+    padding: 25px 55px 25px 55px;
+    border: none;
+    border-radius: 40px;
+    font-family: Rubikone;
+    margin-top: 40px;
+    transition: all 0.8s;
+    font-weight: lighter;
+    cursor: pointer;
   }
-  .Half1o5 {
-    width: 50%;
-    div {
-      p {
-        font-size: 30px;
-        font-family: RubikOne;
-      }
-      span {
-        font-size: 15px
-      }
-    }
-    .Plant {
-        display: flex;
-        background-color: #fffad8;
-        color: #af3e3e;
-        padding: 3vh 2vh 3vh 2vh;
-        border-radius: 20px;
-        margin-bottom: 2vh;
-        img {
-          border-radius: 20px;
-          width: 1000px;
-          height: auto;
-          margin-right: 3vh;
-        }
-    }
-    .Sugar {
-      display: flex;
-      background-color: #fffad8;
-      color: #af3e3e;
-      padding: 3vh 2vh 3vh 2vh;
-      border-radius: 20px;
-      margin-bottom: 2vh;
-      img {
-        border-radius: 20px;
-        width: 650px;
-        height: auto;
-        margin-right: 3vh;
-      }
+  img {
+    border-radius: 300px;
+    margin-left: 120px;
   }
-  .Animal {
-    display: flex;
-    background-color: #fffad8;
-    color: #af3e3e;
-    padding: 3vh 2vh 3vh 2vh;
-    border-radius: 20px;
-    margin-bottom: 2vh;
-    img {
-      border-radius: 20px;
-      width: 500px;
-      height: auto;
-      margin-right: 3vh;
-    }
-}
+  .div {
+    padding: 50px 100px 50px 100px;
+    background: rgba(255, 250, 216, 0.096);
+    border-radius: 16px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    margin-top: 150px;
+    transform: translateY(700px);
   }
 }
 
 /*Animations*/
 
+.show1 {
+  opacity: 1;
+}
+
 @keyframes scroll-right {
-  0%   {
-  transform: translateX(-100%); 		
+  0% {
+    transform: translateX(100%);
   }
   100% {
-  transform: translateX(100%); 
+    transform: translateX(-100%);
   }
- }
+}

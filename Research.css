@@ -1,0 +1,132 @@
+/*Fonts*/
+@font-face {
+    font-family: 'RubikOne';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rubik One Regular'), url('RubikOne-Regular.woff') format('woff');
+    }
+
+@font-face {
+  font-family: 'Geometric';
+  font-style: normal;
+  font-weight: normal;
+  src: url(geometric.otf);
+  }
+
+/*Base*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fffad8;
+
+}
+
+/*Style*/
+.Top {
+    background-color: #873030;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'RubikOne';
+    letter-spacing: 0.5px;
+    color: #fffad8;
+    text-align: center;
+    overflow: hidden;
+    .Top1 {
+    position: absolute;
+    width: 100%;
+    margin: -10px;
+    text-align: center;
+    animation: scroll-right 15s linear infinite; 
+
+   }
+   .Top2 {
+    position: absolute;
+    width: 100%;
+    margin: -10px;
+    text-align: center;
+    transform: translateX(-100%);
+    animation: scroll-right 15s linear infinite;
+    animation-delay: 7.5s;
+
+   }
+}
+.Middle {
+    background-color: #af3e3e;
+    color: #af3e3e;
+    text-align: center;
+    padding: 1px;
+    line-height: 15px;
+}
+.Bottom {
+    background-color: #ebebeb;
+    color: #ebebeb;
+    text-align: center;
+    padding: 1px;
+    line-height: 10px;
+    font-size: 1px;
+}
+.End {
+    background-color: #af3e3e;
+    color: #af3e3e;
+    text-align: center;
+    padding: 1px;
+    line-height: 3px;
+    font-size: 1px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #fcfbfb;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding-right: 25px;
+  li {
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 150px;
+    height: 55px;
+    a {
+        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: RubikOne;
+      }
+  }
+  .Logos {
+    padding-right: 590px;
+    display: flex;
+    P {
+      font-family: RubikOne;
+      font-size: 40px;
+      color: #af3e3e;
+      margin: 5px 5px 5px 20px;
+  
+    }
+    img {
+      height: 60px;
+      width: 65px;
+    }
+  }
+}
+
+/*animation*/
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
