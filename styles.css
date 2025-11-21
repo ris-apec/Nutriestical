@@ -26,99 +26,95 @@ body {
 
 }
 
-/*Style*/
+/* -----------------------------------
+ TOP TEXT SCROLLER
+----------------------------------- */
 .Top {
-    background-color: #873030;
-    padding: 20px;
-    font-size: 20px;
-    font-family: 'RubikOne';
-    letter-spacing: 0.5px;
-    color: #fffad8;
-    text-align: center;
-    overflow: hidden;
+  background-color: #873030;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'RubikOne';
+  letter-spacing: 0.5px;
+  color: #fffad8;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
-.Top1 {
-  position: absolute;
-  width: 100%;
-  margin: -10px;
-  text-align: center;
-  animation: scroll-right 15s linear infinite; 
-  }
-
+.Top1,
 .Top2 {
   position: absolute;
   width: 100%;
   margin: -10px;
-  text-align: center;
-  animation: scroll-right 15s linear infinite; 
-  animation-delay: 7.5s;
+  animation: scroll-right 15s linear infinite;
+}
+
+.Top2 {
   transform: translateX(-100%);
-  }
+  animation-delay: 7.5s;
+}
 
-.Middle {
-    background-color: #af3e3e;
-    color: #af3e3e;
-    text-align: center;
-    padding: 1px;
-    line-height: 15px;
-}
-.Bottom {
-    background-color: #ebebeb;
-    color: #ebebeb;
-    text-align: center;
-    padding: 1px;
-    line-height: 10px;
-    font-size: 1px;
-}
+/* -----------------------------------
+ DIVIDERS
+----------------------------------- */
+.Middle,
+.Bottom,
 .End {
-    background-color: #af3e3e;
-    color: #af3e3e;
-    text-align: center;
-    padding: 1px;
-    line-height: 3px;
-    font-size: 1px;
+  text-align: center;
+  padding: 1px;
 }
 
+.Middle { background: #af3e3e; color: #af3e3e; line-height: 15px; }
+.Bottom { background: #ebebeb; color: #ebebeb; line-height: 10px; font-size: 1px; }
+.End    { background: #af3e3e; color: #af3e3e; line-height: 3px; font-size: 1px; }
+
+/* -----------------------------------
+ NAVIGATION BAR
+----------------------------------- */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    background-color: #fcfbfb;
-    display: flex;
-    justify-content: right;
-    width: 100%;
-    padding-right: 25px;
-  li {
-    border-radius: 10px;
-    margin-left: 20px;
-    width: 150px;
-    height: 55px;
-    a {
-        justify-content: center;
-        display: block;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-family: RubikOne;
-      }
-  }
-  .Logos {
-    padding-right: 59vh;
-    display: flex;
-    P {
-      font-family: RubikOne;
-      font-size: 40px;
-      color: #af3e3e;
-      margin: 5px 5px 5px 20px;
-  
-    }
-    img {
-      height: 60px;
-      width: 65px;
-    }
-  }
+  list-style: none;
+  padding: 10px 25px;
+  background-color: #fcfbfb;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+}
+
+.Logos img {
+  height: 60px;
+  width: 65px;
+}
+
+.Logos p {
+  font-family: RubikOne;
+  font-size: 32px;
+  color: #af3e3e;
+}
+
+ul li {
+  border-radius: 10px;
+  width: 140px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: RubikOne;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 12px 0;
 }
 
 .Home {

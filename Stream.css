@@ -26,99 +26,230 @@ body {
 
 }
 
-/*Style*/
+/* -----------------------------------
+ TOP TEXT SCROLLER
+----------------------------------- */
 .Top {
-    background-color: #873030;
-    padding: 20px;
-    font-size: 20px;
-    font-family: 'RubikOne';
-    letter-spacing: 0.5px;
-    color: #fffad8;
-    text-align: center;
-    overflow: hidden;
-    .Top1 {
-    position: absolute;
-    width: 100%;
-    margin: -10px;
-    text-align: center;
-    animation: scroll-right 15s linear infinite; 
+  background-color: #873030;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'RubikOne';
+  letter-spacing: 0.5px;
+  color: #fffad8;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
 
-   }
-   .Top2 {
-    position: absolute;
-    width: 100%;
-    margin: -10px;
-    text-align: center;
-    transform: translateX(-100%);
-    animation: scroll-right 15s linear infinite;
-    animation-delay: 7.5s;
+.Top1,
+.Top2 {
+  position: absolute;
+  width: 100%;
+  margin: -10px;
+  animation: scroll-right 15s linear infinite;
+}
 
-   }
+.Top2 {
+  transform: translateX(-100%);
+  animation-delay: 7.5s;
 }
-.Middle {
-    background-color: #af3e3e;
-    color: #af3e3e;
-    text-align: center;
-    padding: 1px;
-    line-height: 15px;
-}
-.Bottom {
-    background-color: #ebebeb;
-    color: #ebebeb;
-    text-align: center;
-    padding: 1px;
-    line-height: 10px;
-    font-size: 1px;
-}
+
+/* -----------------------------------
+ DIVIDERS
+----------------------------------- */
+.Middle,
+.Bottom,
 .End {
-    background-color: #af3e3e;
-    color: #af3e3e;
-    text-align: center;
-    padding: 1px;
-    line-height: 3px;
-    font-size: 1px;
+  text-align: center;
+  padding: 1px;
 }
 
+.Middle { background: #af3e3e; color: #af3e3e; line-height: 15px; }
+.Bottom { background: #ebebeb; color: #ebebeb; line-height: 10px; font-size: 1px; }
+.End    { background: #af3e3e; color: #af3e3e; line-height: 3px; font-size: 1px; }
+
+/* -----------------------------------
+ NAVIGATION BAR
+----------------------------------- */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    background-color: #fcfbfb;
-    display: flex;
-    justify-content: right;
-    width: 100%;
-    padding-right: 25px;
-  li {
-    border-radius: 10px;
-    margin-left: 20px;
-    width: 150px;
-    height: 55px;
-    a {
-        justify-content: center;
-        display: block;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-family: RubikOne;
-      }
+  list-style: none;
+  padding: 10px 25px;
+  background-color: #fcfbfb;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.Logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+}
+
+.Logos img {
+  height: 60px;
+  width: 65px;
+}
+
+.Logos p {
+  font-family: RubikOne;
+  font-size: 32px;
+  color: #af3e3e;
+}
+
+ul li {
+  border-radius: 10px;
+  width: 140px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: RubikOne;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 12px 0;
+}
+
+
+.Sub1 {
+  font-size: 80px;
+  font-family: RubikOne;
+  color: #af3e3e;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.Image {
+  width: 400px;
+}
+
+.Scroll1 {
+  padding: 20px 100px 0px 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  border-radius: 50px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.Scroll2 {
+  margin-top: 100px;
+  height: 100vh;
+  .Image {
+    height: fit-content;
+    width: max-content;
+    margin: 50px;
+    border: 5px solid #af3e3e;
+    border-radius: 20px;
   }
-  .Logos {
-    padding-right: 590px;
+  .Images {
     display: flex;
-    P {
-      font-family: RubikOne;
-      font-size: 40px;
-      color: #af3e3e;
-      margin: 5px 5px 5px 20px;
-  
-    }
-    img {
-      height: 60px;
-      width: 65px;
-    }
+  }
+  p {
+    font-size: 80px;
+    text-align: center;
+    color: #af3e3e;
+    font-family: RubikOne;
   }
 }
+
+.Scroll3 {
+  margin-top: 100px;
+  height: 100vh;
+  img {
+    height: 700px;
+
+    margin: 50px 0px 0px 300px;
+    border-radius: 20px;
+  }
+  p {
+    font-size: 80px;
+    text-align: center;
+    color: #af3e3e;
+    font-family: RubikOne;
+  }
+}
+
+
+
+
+
+
+
 
 /*animation*/
 
@@ -129,4 +260,14 @@ ul {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
